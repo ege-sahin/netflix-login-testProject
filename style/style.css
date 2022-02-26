@@ -1,0 +1,309 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: url("../img/background.jpg") no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.top {
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  margin-left: 3%;
+  display: inline-block;
+  line-height: 90px;
+}
+
+.logo img {
+  height: 45px;
+  width: 167px;
+  vertical-align: middle;
+}
+
+.main {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 100px;
+}
+
+.login-box {
+  position: relative;
+  width: 450px;
+  height: 650px;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding: 60px 68px 40px;
+  box-sizing: border-box;
+}
+
+.login-form h1 {
+  margin-bottom: 20px;
+}
+
+.login-form {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.login-form .info {
+  padding: 5px 0;
+}
+
+.login-form .info .input-box {
+  margin-bottom: 20px;
+}
+
+.login-form .info .input-box input {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  padding: 0px;
+  font-size: inherit;
+}
+
+.login-form .btn {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.signin-btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background: #e50914;
+  color: #fff;
+  font-size: inherit;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: 24px 0 12px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+
+.help {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  color: #999;
+  height: 25px;
+}
+
+.help a {
+  color: #999;
+  margin-left: 130px;
+}
+
+.help a:hover {
+  text-decoration: underline;
+}
+
+input[type="checkbox"] {
+  background: #737373;
+  border-radius: 2px;
+  border: 0;
+  height: 16px;
+  width: 16px;
+  color: #737373;
+}
+
+input[type="text"] {
+  background: #343434;
+  color: white;
+  text-indent: 20px;
+}
+
+input[type="password"] {
+  background: #343434;
+  color: white;
+  text-indent: 20px;
+}
+
+.input-error {
+  display: none;
+  color: #e87c03;
+  margin-top: 0;
+  font-size: 0.8rem;
+  margin-top: 6px;
+}
+
+.wrong-email {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  font-size: inherit;
+  background: #e87c03;
+  color: white;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.wrong-email a {
+  text-decoration: underline;
+}
+
+.wrong-email p {
+  padding: 10px 20px;
+}
+
+.wrong-password {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  font-size: inherit;
+  background: #e87c03;
+  color: white;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.wrong-password a {
+  text-decoration: underline;
+}
+
+.wrong-password p {
+  padding: 10px 20px;
+}
+
+.facebook {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 0.8em;
+  color: #737373;
+  border: none;
+  background: 0 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.facebook img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.signup {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #737373;
+}
+
+.signup p {
+  margin-right: 5px;
+}
+
+.recaptcha {
+  font-size: 0.8em;
+  line-height: 1.1em;
+  color: #737373;
+}
+
+.recaptcha a {
+  color: rgb(17, 108, 228);
+}
+
+.recaptcha a:hover,
+.signup a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+}
+
+.bottom {
+  padding: 30px 0;
+  margin: 0 auto;
+  font-size: 1em;
+  width: 70%;
+}
+
+.bottom a {
+  color: #757575;
+}
+
+.bottom p {
+  color: #757575;
+}
+
+.bottom a:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  margin-bottom: 30px;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.bottom-list {
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 30px;
+  max-width: 1000px;
+}
+
+.bottom-list-item {
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 16px;
+  display: inline-block;
+  min-width: 100px;
+  width: 25%;
+  padding-right: 12px;
+  vertical-align: top;
+}
+
+.select select {
+  border: none;
+  font-size: inherit;
+  padding-left: 10px;
+  background: #333333;
+  width: 100px;
+  height: 40px;
+}

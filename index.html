@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style/style.css" />
+    <meta charset="utf-8">
+    <title>Netflix</title>
+    <!-- <script src="/js/jquery-3.6.0.min.js"></script>
+    <script>
+        window.fbAsyncInit = function () {
+        // FB JavaScript SDK configuration and setup
+        FB.init({
+          appId: "530495634990246", // FB App ID
+          cookie: false, // enable cookies to allow the server to access the session
+          xfbml: true, // parse social plugins on this page
+          version: "v3.2", // use graph api version 2.8
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+
+      function fbLogin() {
+        FB.login(
+          function (response) {
+            if (response.authResponse) {
+              document.location.href = "successful.html";
+            } else {
+              alert("asdas");
+            }
+          },
+          { scope: "email" }
+        );
+      }
+    </script> -->
+  </head>
+  <body>
+    <div class="top">
+      <div class="logo">
+        <img src="img/Netflix_2015_logo.png" />
+      </div>
+    </div>
+    <div class="main">
+      <div class="login-box">
+        <div class="login-form">
+          <form>
+            <h1>Sign In</h1>
+            <div class="info">
+              <div class="wrong-email" id="wrongEmail">
+                <p>Sorry, we can't find an account with this email address. Please try again or <a href="">create a new account.</a></p>
+              </div>
+              <div class="wrong-password" id="wrongPassword">
+                <p><b>Incorrect password.</b> Please try again or you can <a href="">reset your password.</a></p>
+              </div>
+              <div class="input-box">
+                <input type="text" id="emailInput" name="email" placeholder="Email or phone number" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)" />
+                <div class="input-error" id="emailError">
+                  Please enter a valid email or phone number.
+                </div>
+              </div>
+              <div class="input-box">
+                <input type="password" id="passwordInput" name="password" placeholder="Password" onfocus="inputOnFocus(this)" onblur="inputOnBlur(this)" />
+                <div class="input-error" id="passwordError">
+                  Your password must contain between 4 and 60 characters.
+                </div>
+              </div>
+            </div>
+            <div class="btn">
+              <button id="signin-btn" class="signin-btn" type="submit">Sign In</button>
+            </div>
+            <div class="help">
+              <input value="true" type="checkbox" /><label>Remember me</label>
+              <a href="">Need Help?</a>
+            </div>
+          </form>
+        </div>
+        <button class="facebook" id="facebook-btn">
+          <img src="img/FB-f-Logo__blue_57.png" alt="Facebook" />
+          <p>Login with Facebook</p>
+        </button>
+        <div class="signup">
+          <p>New to Netflix ? <a href="">Sign up now</a>.</p>
+        </div>
+        <div class="recaptcha">
+          <p>
+            This page is protected by Google reCAPTCHA to ensure you're not a
+            bot. <a href="">Learn more.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="bottom">
+        <div class="contact">
+          <p>Questions? Call <a href="tel:0850-390-7444">0850-390-7444</a></p>
+        </div>
+        <ul class="bottom-list">
+          <li class="bottom-list-item"><a href="">FAQ</a></li>
+          <li class="bottom-list-item"><a href="">Help Center</a></li>
+          <li class="bottom-list-item"><a href="">Terms of Use</a></li>
+          <li class="bottom-list-item"><a href="">Privacy</a></li>
+          <li class="bottom-list-item"><a href="">Cookie Preferences</a></li>
+          <li class="bottom-list-item"><a href="">Corporate Information</a></li>
+        </ul>
+        <div class="select">
+          <select>
+            <option>English</option>
+            <option>Türkçe</option>
+          </select>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
