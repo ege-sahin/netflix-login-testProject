@@ -200,6 +200,25 @@ input[type="password"] {
   padding: 10px 20px;
 }
 
+.wrong-facebook {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  font-size: inherit;
+  background: #e87c03;
+  color: white;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.wrong-facebook a {
+  text-decoration: underline;
+}
+
+.wrong-facebook p {
+  padding: 10px 20px;
+}
+
 .facebook {
   width: 100%;
   display: flex;

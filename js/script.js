@@ -69,6 +69,7 @@ document
     event.preventDefault();
     wrongEmail.style.display = "none";
     wrongPassword.style.display = "none";
+    wrongFacebook.style.display = "none";
     if (inputFilled.email && inputFilled.password) {
       for (let i = 0; i < users.length; i++) {
         if (users[i][0] == emailInput.value) {
@@ -89,5 +90,14 @@ document
   .querySelector("#facebook-btn")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    fbLogin();
+    wrongEmail.style.display = "none";
+    wrongPassword.style.display = "none";
+    wrongFacebook.style.display = "none";
+    FB.login(function (response) {
+      if (response.status === "connected") {
+        document.location.href = "successful.html";
+      } else {
+        wrongFacebook.style.display = "block";
+      }
+    });
   });
