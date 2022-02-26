@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="style/style.css" />
     <meta charset="utf-8">
     <title>Netflix</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <script>
       window.fbAsyncInit = function() {
         FB.init({
@@ -24,14 +25,6 @@
          js.src = "https://connect.facebook.net/en_US/sdk.js";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
-
-      FB.login(function(response) {
-        if (response.status === 'connected') {
-          // Logged into your webpage and Facebook.
-        } else {
-          // The person is not logged into your webpage or we are unable to tell. 
-        }
-      });
     </script>
   </head>
   <body>
