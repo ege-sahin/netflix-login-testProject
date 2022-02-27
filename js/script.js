@@ -21,6 +21,8 @@ const passwordInput = document.getElementById("passwordInput");
 const emailError = document.getElementById("emailError");
 const passwordError = document.getElementById("passwordError");
 
+let facebookPopupOpened = false;
+
 const inputOnFocus = (val) => {
   inputFocused[val.name] = true;
 };
@@ -93,11 +95,15 @@ document
     wrongEmail.style.display = "none";
     wrongPassword.style.display = "none";
     wrongFacebook.style.display = "none";
-    FB.login(function (response) {
-      if (response.status === "connected") {
-        document.location.href = "successful.html";
-      } else {
-        wrongFacebook.style.display = "block";
-      }
-    });
+    if (!facebookPopupOpened) {
+      facebookPopupOpened = true;
+      FB.login(function (response) {
+        if (response.status === "connected") {
+          document.location.href = "successful.html";
+        } else {
+          wrongFacebook.style.display = "block";
+          facebookPopupOpened = false;
+        }
+      });
+    }
   });
