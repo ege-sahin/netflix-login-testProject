@@ -33,7 +33,17 @@ async function facebookLogin() {
     await driver.get(__dirname + "/../index.html");
     await driver.findElement(By.id("facebook-btn")).click();   
     
+    var parent = await driver.getWindowHandle();
+    var windows = await driver.getAllWindowHandles();
 
+    await driver.sleep(2000);
+
+    await driver.switchTo().window(windows[1]);
+
+    await driver.findElement(By.id("email")).sendKeys("abc");
+
+    //driver.close();
+    //driver.switchTo().window(parent);
     //setTimeout(closeScreen, 10000);
 }
 
