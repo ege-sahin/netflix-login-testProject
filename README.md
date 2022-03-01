@@ -1,6 +1,6 @@
 This is Project 1 of CS 458
 
-In order to run the project properly, you should run the site in localhost (you can use XAMPP). After installing XAMPP copy all of the contents in the repository and paste in the htdocs repository in XAMPP's folder. After that just open the URL "https://localhost" and you are ready to go.
+In order to run the project properly, you should run the site in localhost (you can use XAMPP). After installing XAMPP copy all of the contents in the repository and paste in the htdocs folder in XAMPP's folder. After that just open the URL "https://localhost" and you are ready to go.
 
 --------------------------------------------------------------------------------
 
