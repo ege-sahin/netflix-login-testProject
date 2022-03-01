@@ -20,6 +20,26 @@ const emailInput = document.getElementById("emailInput");
 const passwordInput = document.getElementById("passwordInput");
 const emailError = document.getElementById("emailError");
 const passwordError = document.getElementById("passwordError");
+const rememberMe = document.getElementById("rememberMe");
+
+const rememberedEmail = getEmailCookie();
+
+function getEmailCookie() {
+  let decodedCookies = decodeURIComponent(document.cookie);
+  let cookiesArray = decodedCookies.split(";");
+  for (let i = 0; i < cookiesArray.length; i++) {
+    let cookie = cookiesArray[i];
+    while (cookie.charAt(0) == " ") {
+      cookie = cookie.substring(1);
+    }
+    if (cookie.indexOf("email=") == 0) {
+      return cookie.substring("email=".length, cookie.length);
+    }
+  }
+  return "";
+}
+
+emailInput.value = rememberedEmail;
 
 let facebookPopupOpened = false;
 
@@ -73,6 +93,12 @@ document
     wrongPassword.style.display = "none";
     wrongFacebook.style.display = "none";
     if (inputFilled.email && inputFilled.password) {
+      if (rememberMe.checked) {
+        document.cookie =
+          "email=" +
+          emailInput.value +
+          "; expires=Thu, 1 Mar 2025 12:00:00 UTC";
+      }
       for (let i = 0; i < users.length; i++) {
         if (users[i][0] == emailInput.value) {
           if (users[i][1] == passwordInput.value) {
