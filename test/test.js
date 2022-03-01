@@ -95,6 +95,16 @@ async function needHelpButton() {
     await driver.quit();
 }
 
+async function multipleFacebookButtonClick() {
+    driver = await new Builder().forBrowser("chrome").build();
+
+    await driver.get(__dirname + "/../index.html");
+    await driver.findElement(By.id("facebook-btn")).click();
+    await driver.findElement(By.id("facebook-btn")).click();
+    await driver.findElement(By.id("facebook-btn")).click();
+    await driver.findElement(By.id("facebook-btn")).click();
+}
+
 async function rememberMe() {
     driver = await new Builder().forBrowser("chrome").build();
 
@@ -117,10 +127,12 @@ async function rememberMe() {
     await driver.quit();
 }
 
+
+
 succesfulLogin();
 needHelpButton();
 facebookLogin();
 succesfulLoginFirefox();
-rememberMe();
+multipleFacebookButtonClick()
 unsuccesfulLogin();
 unsuccesfulfacebookLogin();
