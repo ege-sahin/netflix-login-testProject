@@ -22,9 +22,9 @@ The test folder contains the test.js file which includes different test function
 In order to run the test.js, in test folder you should add some dependencies.
 
 In test folder, run these commands on terminal
- - npm init
- - npm install Selenium-Webdriver
- - npm install chromedriver
+ - npm init,
+ - npm install Selenium-Webdriver,
+ - npm install chromedriver,
  - npm install geckodriver
 
 --------------------------------------------------------------------------------
@@ -36,3 +36,7 @@ The function calls of those functions are at the end of the test.js file.
 These function calls are written as comments.
 
 The runner must uncomment the function calls to see how they are executed.
+
+--------------------------------------------------------------------------------
+
+Index.html file is the sign in page, other html documents are connected to it.
